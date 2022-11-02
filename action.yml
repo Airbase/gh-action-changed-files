@@ -173,7 +173,7 @@ runs:
         INPUT_PATH: ${{ inputs.path }}
         INPUT_MAX_FETCH_DEPTH: ${{ inputs.max_fetch_depth }}
     - name: Glob match
-      uses: tj-actions/glob@v15
+      uses: airbase/gh-action-glob@main
       id: glob
       with:
         files: ${{ inputs.files }}
